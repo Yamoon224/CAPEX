@@ -68,9 +68,11 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Col 1 — Logo + menu */}
             <div>
-              <p className="font-display text-[36px] font-bold tracking-[0.18em] text-gray-900 leading-none">
-                CAP<span className="text-brand">EX</span>
-              </p>
+              <img
+                src="/logo.png"
+                alt="CAPEX - Centrale d'Achat Pour l'Export"
+                className="h-[70px] w-auto"
+              />
               <ul className="mt-6 space-y-1.5 text-sm">
                 {MAIN_LINKS.map(([label, href]) => (
                   <li key={href}>

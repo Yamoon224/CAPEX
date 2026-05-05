@@ -38,9 +38,11 @@ export default function Header() {
           itemScope
           itemType="http://schema.org/Organization"
         >
-          <span className="font-display text-[42px] font-bold tracking-[0.18em] text-brand leading-none">
-            CAP<span className="text-gray-800">EX</span>
-          </span>
+          <img
+            src="/logo.png"
+            alt="CAPEX - Centrale d'Achat Pour l'Export"
+            className="h-[70px] w-auto md:h-[80px]"
+          />
         </Link>
 
         {/* Right side */}
