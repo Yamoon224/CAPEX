@@ -19,12 +19,7 @@ const PICTOS = [
       </>
     ),
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 38h18l4-8h26l4 8h8" />
-        <circle cx="22" cy="50" r="6" />
-        <circle cx="48" cy="50" r="6" />
-        <path d="M14 22h12M10 30h16" />
-      </svg>
+      <img src="/icons/fast-delivery.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
   {
@@ -43,12 +38,7 @@ const PICTOS = [
       </>
     ),
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 46c4 4 8 4 12 0s8-4 12 0 8 4 12 0 8-4 12 0 8 4 12 0" />
-        <path d="M10 40l8-22h28l8 22" />
-        <path d="M32 18V8" />
-        <path d="M22 14h20" />
-      </svg>
+      <img src="/icons/plane-boat.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
   {
@@ -67,12 +57,7 @@ const PICTOS = [
       </>
     ),
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2">
-        <circle cx="32" cy="32" r="26" />
-        <ellipse cx="32" cy="32" rx="14" ry="26" />
-        <path d="M6 32h52" strokeLinecap="round" />
-        <path d="M32 6c-6 8-6 44 0 52" strokeLinecap="round" />
-      </svg>
+      <img src="/icons/earth.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
 ];

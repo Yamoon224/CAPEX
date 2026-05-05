@@ -7,47 +7,28 @@ const SERVICES = [
     fr: "Négoce",
     en: "Trading",
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14 26h36l-3 28H17z" />
-        <path d="M24 26V16a8 8 0 0116 0v10" />
-        <circle cx="24" cy="36" r="1.5" fill="#008dd2" />
-        <circle cx="40" cy="36" r="1.5" fill="#008dd2" />
-      </svg>
+      <img src="/icons/negociation.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
   {
     fr: "Stockage",
     en: "Storage",
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 28L32 12l24 16v26H8z" />
-        <rect x="22" y="36" width="20" height="18" />
-        <path d="M22 44h20" />
-      </svg>
+      <img src="/icons/stock.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
   {
     fr: "Manutention",
     en: "Handling",
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="8" y="32" width="22" height="18" />
-        <path d="M30 22h14l10 14v14H30" />
-        <circle cx="18" cy="54" r="4" />
-        <circle cx="44" cy="54" r="4" />
-        <path d="M14 38h10M14 44h10" />
-      </svg>
+      <img src="/icons/forklift.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
   {
     fr: "Expéditions",
     en: "Shipping",
     icon: (
-      <svg viewBox="0 0 64 64" fill="none" stroke="#008dd2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 46c4 4 8 4 12 0s8-4 12 0 8 4 12 0 8-4 12 0 8 4 12 0" />
-        <path d="M10 40l8-22h28l8 22" />
-        <path d="M32 18V6" />
-      </svg>
+      <img src="/icons/cargo.svg" alt="" className="h-full w-full object-contain" />
     ),
   },
 ];

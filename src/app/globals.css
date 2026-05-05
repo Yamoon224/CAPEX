@@ -37,3 +37,93 @@ h1, h2, h3, h4 {
     @apply inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-dark;
   }
 }
+
+/* Blog post column (news cards) — replicates WP markup */
+.blog-post-column {
+  width: 100%;
+}
+.blog-post-entry {
+  display: block;
+}
+.blog-post-image {
+  position: relative;
+  overflow: hidden;
+}
+.blog-post-image > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.blog-post-image .image-placeholder {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.blog-post-image .image-placeholder img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.blog-post-image:hover .image-placeholder img {
+  transform: scale(1.05);
+}
+.blog-post-image .hover-display {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(191, 170, 142, 0.55);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+.blog-post-image:hover .hover-display {
+  opacity: 1;
+}
+.blog-post-image .hover-display .icon-basic-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+.blog-post-image .hover-display .icon-basic-link svg {
+  width: 22px;
+  height: 22px;
+}
+.blog-post-content-container {
+  padding-top: 1.25rem;
+  text-align: center;
+}
+.blog-post-title {
+  font-family: var(--font-raleway), Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin: 0;
+  line-height: 1.35;
+}
+.blog-post-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.blog-post-title a:hover {
+  color: #bfaa8e;
+}
+.blog-post-date {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

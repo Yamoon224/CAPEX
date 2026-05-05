@@ -97,7 +97,7 @@ export default function Page() {
                 <svg
                   className="mx-auto"
                   width="48" height="48" viewBox="0 0 24 24"
-                  fill="none" stroke="#008dd2" strokeWidth="1.5"
+                  fill="none" stroke="#bfaa8e" strokeWidth="1.5"
                   strokeLinecap="round" strokeLinejoin="round"
                 >
                   <path d={c.icon} />

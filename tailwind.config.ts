@@ -6,13 +6,13 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#008dd2",
-          dark: "#0072a8",
-          light: "#33a4dc",
-          accent: "#008dd2",
-          gold: "#d4a017",
+          DEFAULT: "#bfaa8e",
+          dark: "#2d2d2d",
+          light: "#d4c4ad",
+          accent: "#bfaa8e",
+          gold: "#bfaa8e",
         },
-        bgblue: "#f2f9fd",
+        bgblue: "#f7f3ee",
       },
       fontFamily: {
         sans: ["Raleway", "Helvetica", "Arial", "sans-serif"],

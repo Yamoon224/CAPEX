@@ -109,52 +109,36 @@ export default function Page() {
         <div className="container-x max-w-[1170px]">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {ARTICLES.map((a) => (
-              <article
-                key={a.slug}
-                className="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden flex flex-col hover:shadow-md transition"
-              >
-                {/* Thumbnail */}
-                <Link
-                  href={`/actualites/${a.slug}`}
-                  className="block aspect-[16/10] relative"
-                  style={{ backgroundColor: a.hue }}
-                >
-                  <span className="absolute inset-0 flex items-center justify-center">
-                    <svg
-                      width="56" height="56" viewBox="0 0 24 24"
-                      fill="none" stroke="#fff" strokeWidth="1"
-                      strokeLinecap="round" strokeLinejoin="round"
-                      opacity="0.7"
-                    >
-                      <rect x="3" y="5" width="18" height="14" rx="2" />
-                      <path d="M3 9h18M8 5v14" />
-                    </svg>
-                  </span>
-                  <span className="absolute left-3 top-3 bg-brand text-white text-[11px] font-medium uppercase tracking-wide px-2 py-0.5 rounded">
-                    {a.tag}
-                  </span>
-                </Link>
-
-                {/* Body */}
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="font-display text-base md:text-lg font-semibold text-gray-900 leading-snug">
-                    <Link
-                      href={`/actualites/${a.slug}`}
-                      className="hover:text-brand transition"
-                    >
-                      {a.title}
+              <div key={a.slug} className="blog-post-column">
+                <div className="blog-post-entry post type-post status-publish format-standard has-post-thumbnail hentry">
+                  <div className="blog-post-image">
+                    <Link href={`/actualites/${a.slug}`} className="">
+                      <span
+                        className="image-placeholder"
+                        style={{ paddingBottom: "62.5%", backgroundColor: a.hue }}
+                      >
+                        {/* placeholder visuel — remplacer par <img src=... /> quand l'image sera dispo */}
+                      </span>
+                      <span className="hover-display">
+                        <i className="icon-basic-link" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                          </svg>
+                        </i>
+                      </span>
                     </Link>
-                  </h3>
-
-                  <div className="mt-auto pt-5 flex items-center gap-2 text-xs text-gray-500">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <path d="M16 2v4M8 2v4M3 10h18" />
-                    </svg>
-                    <span>{a.date}</span>
+                  </div>
+                  <div className="blog-post-content-container">
+                    <h3 className="blog-post-title">
+                      <Link href={`/actualites/${a.slug}`} className="">
+                        {a.title}
+                      </Link>
+                    </h3>
+                    <div className="blog-post-date">{a.date}</div>
                   </div>
                 </div>
-              </article>
+              </div>
             ))}
           </div>
         </div>
