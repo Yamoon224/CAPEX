@@ -17,7 +17,7 @@ export default function Hero() {
             Buying group for the export
           </p>
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-tight">
-            CAPEX, votre
+            <span className="text-brand">CAPEX</span>, votre
             <br />
             <span className="text-brand-accent">centrale d&apos;achat</span>
             <br />

@@ -23,7 +23,7 @@ export default function About() {
             Qui sommes-nous
           </p>
           <h2 className="font-display text-3xl md:text-4xl uppercase font-black text-brand leading-tight">
-            CAPEX votre centrale
+            <span className="text-brand">CAPEX</span> votre centrale
             <br />
             d&apos;achat en France
           </h2>

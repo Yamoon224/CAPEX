@@ -36,9 +36,9 @@ export default function News() {
     <section className="container-x py-12 md:py-16">
       <h2 className="text-center text-[28px] md:text-[38px] leading-[1.2] md:leading-[45px] text-gray-800 mb-12">
         {isEN ? (
-          <><strong className="font-bold">Capex</strong> news</>
+          <><strong className="font-bold text-brand">Capex</strong> news</>
         ) : (
-          <>L&apos;actualité <strong className="font-bold">Capex</strong></>
+          <>L&apos;actualité <strong className="font-bold text-brand">Capex</strong></>
         )}
       </h2>
       <div className="grid md:grid-cols-3 gap-8">

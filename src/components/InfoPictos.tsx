@@ -44,14 +44,14 @@ const PICTOS = [
   {
     fr: (
       <>
-        Capex vous assure
+        <span className="text-brand">Capex</span> vous assure
         <br />
         <strong className="font-bold">une couverture mondiale</strong>
       </>
     ),
     en: (
       <>
-        Capex provides you with
+        <span className="text-brand">Capex</span> provides you with
         <br />
         <strong className="font-bold">worldwide coverage</strong>
       </>
